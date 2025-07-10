@@ -64,4 +64,10 @@ form {
 }
 
 
-/* Program & Events Page, Kevin Nie's code above */
+/* Program & Events Page, Kevin Nie's code above *//* Modifying the CSS of about-org.html*/
+.about-quote {
+font-size: 2.5vw;
+border-color: #185D33;
+}
+
+/* End of CSS for about-org.html*/
