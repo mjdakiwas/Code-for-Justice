@@ -27,3 +27,25 @@ border-color: #185D33;
 }
 
 /* End of CSS for about-org.html*/
+
+/* start of contact css */
+form {
+    display: grid;
+    grid-area: 
+        label label
+        fname lname
+        ;
+}
+
+#donate {
+    display: none;
+}
+
+#volunteer {
+    display: none;
+}
+
+#request {
+    display: none;
+}
+/* end of contact css */
