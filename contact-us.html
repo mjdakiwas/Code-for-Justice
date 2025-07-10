@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <!-- nav bar -->
+
+    <main>
+        <h1>Contact Us!</h1>
+        <form>
+            <p>Full Name</p>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="First Name" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" placeholder="ex. @example.com">
+
+            <label for="phone-num">Phone Number:</label>
+            <input type="tel" id="phone-num" name="phone-num" placeholder="Phone Number">
+
+            <select id="contact-select" required>
+                <option value="">Reason for contact</option>
+                <option value="donate">Donate</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="request">Request Digital Accessibility for my site</option>
+            </select>
+
+            <input type="text" id="message" name="message" placeholder="Please give us a message!">
+
+            <section id="donate">
+                <section>
+                    <label for="amount">Choose a Donation Amount</label>
+                    <button id="5">$5</button>
+                    <button id="10">$10</button>
+                    <button id="25">$25</button>
+                    <button id="50">$50</button>
+                    <button id="100">$100</button>
+                    <input type="number" id="custom-amount" name="custom-amount">
+                </section>
+
+                <section>
+                    <label for="payment-type">Payment Information</label>
+                    <button id="pay-card">Credit Card</button>
+                    <button id="pay-bank">Bank Account</button>
+
+                    <section id="credit-card">
+                        <h2>Pay by Credit Card</h2>
+                        <label for="card-num">Card Number</label>
+                        <input type="number" id="card-num" name="card-num">
+                        <label for="exp-date">Expiration</label>
+                        <input type="date" id="exp-date" name="exp-date">
+                        <label for="verify">Verification</label>
+                        <input type="number" id="cvc" name="cvc">
+                    </section>
+                </section>
+            </section>
+
+            <section id="volunteer">
+                <label for="volunteer-type"></label>
+            </section>
+
+            <section id="request"></section>
+
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+    <!-- <footer></footer> -->
+     <script src="script.js"></script>
+</body>
+
+</html>
