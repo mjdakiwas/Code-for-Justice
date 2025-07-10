@@ -18,45 +18,9 @@ form {
 #request {
     display: none;
 }
-/* end of contact css *//* Modifying the CSS of about-org.html*/
-.about-quote {
-font-size: 2.5vw;
-border-color: #185D33;
-}
+/* end of contact css */
 
-/* End of CSS for about-org.html*//* Modifying the CSS of about-org.html*/
-.about-quote {
-font-size: 2.5vw;
-border-color: #185D33;
-}
-
-/* End of CSS for about-org.html*//* Modifying the CSS of about-org.html*/
-.about-quote {
-font-size: 2.5vw;
-border-color: #185D33;
-}
-
-/* End of CSS for about-org.html*//* start of contact css */
-form {
-    display: grid;
-    grid-area: 
-        label label
-        fname lname
-        ;
-}
-
-#donate {
-    display: none;
-}
-
-#volunteer {
-    display: none;
-}
-
-#request {
-    display: none;
-}
-/* end of contact css *//* Modifying the CSS of about-org.html*/
+/* Modifying the CSS of about-org.html*/
 .about-quote {
 font-size: 2.5vw;
 border-color: #185D33;
