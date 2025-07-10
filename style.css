@@ -56,4 +56,10 @@ form {
 #request {
     display: none;
 }
-/* end of contact css */
+/* end of contact css *//* Modifying the CSS of about-org.html*/
+.about-quote {
+font-size: 2.5vw;
+border-color: #185D33;
+}
+
+/* End of CSS for about-org.html*/
