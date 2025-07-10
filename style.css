@@ -1,0 +1,17 @@
+/* Program & Events Page, Kevin Nie's code below */
+#statement_section {
+    text-align: center;
+    font-size: 20px;
+}
+
+.program_header {
+    text-align: center;
+}
+
+.grid__three_rows {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/* Program & Events Page, Kevin Nie's code above */
