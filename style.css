@@ -1,0 +1,21 @@
+/* start of contact css */
+form {
+    display: grid;
+    grid-area: 
+        label label
+        fname lname
+        ;
+}
+
+#donate {
+    display: none;
+}
+
+#volunteer {
+    display: none;
+}
+
+#request {
+    display: none;
+}
+/* end of contact css */
