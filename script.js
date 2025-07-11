@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('select').formSelect();
+    $('.tabs').tabs();
 })
 
 let contact_select = document.querySelector('#contact-select');
@@ -26,7 +27,6 @@ let contact_select = document.querySelector('#contact-select');
         $('#request').hide();
     }
 })).trigger('change');
-
 
 // js form handling
 // validation
