@@ -1,3 +1,10 @@
+/* Modifying the CSS of about-org.html*/
+.about-quote {
+font-size: 2.5vw;
+border-color: #185D33;
+}
+/* End of CSS for about-org.html*/
+
 /* Program & Events Page, Kevin Nie's code below */
 #statement_section {
     background-color: #185D33;
@@ -39,14 +46,11 @@ img {
     justify-content: center;
 }
 
-
-
 .button_align {
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 25px;
-
 }
 
 .button {
@@ -56,36 +60,15 @@ img {
     border-radius: 50px;
     font-size: 2.3vw;
     padding: 10px 15px;
-    
 }
 
 .button:hover {
     background-color: black;
 }
-
-
-
-
-
 /* Program & Events Page, Kevin Nie's code above */
 
-/* Modifying the CSS of about-org.html*/
-.about-quote {
-font-size: 2.5vw;
-border-color: #185D33;
-}
-
-/* End of CSS for about-org.html*/
 
 /* start of contact css */
-form {
-    display: grid;
-    grid-area: 
-        label label
-        fname lname
-        ;
-}
-
 #donate {
     display: none;
 }
