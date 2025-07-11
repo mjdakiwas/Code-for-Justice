@@ -25,10 +25,6 @@ border-color: #185D33;
 /* Program & Events Page, Kevin Nie's code above */
 
 /* start of contact css */
-#contact-body {
-    padding: 25px;
-}
-
 form {
     display: grid;
     grid-area: 
