@@ -5,3 +5,35 @@ border-color: #185D33;
 }
 
 /* End of CSS for about-org.html*/
+
+/* Program & Events Page, Kevin Nie's code below */
+#statement_section {
+    text-align: center;
+    font-size: 20px;
+}
+
+.program_header {
+    text-align: center;
+}
+
+.grid__three_rows {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/* Program & Events Page, Kevin Nie's code above */
+
+/* start of contact css */
+#donate {
+    display: none;
+}
+
+#volunteer {
+    display: none;
+}
+
+#request {
+    display: none;
+}
+/* end of contact css */
