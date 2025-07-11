@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     $('select').formSelect();
 })
@@ -30,3 +31,4 @@ let contact_select = document.querySelector('#contact-select');
 
 // js form handling
 // validation
+
