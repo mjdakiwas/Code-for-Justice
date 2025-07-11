@@ -25,14 +25,6 @@ border-color: #185D33;
 /* Program & Events Page, Kevin Nie's code above */
 
 /* start of contact css */
-form {
-    display: grid;
-    grid-area: 
-        label label
-        fname lname
-        ;
-}
-
 #donate {
     display: none;
 }

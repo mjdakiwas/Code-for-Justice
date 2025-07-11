@@ -38,8 +38,8 @@
                     Phone Number</label>
             </div>
 
-            <select id="contact-select" required>
-                <option value="">Reason for contact</option>
+            <select id="contact-select" class="input-field col s12" required>
+                <option value="" disabled selected>Reason for contact</option>
                 <option value="donate">Donate</option>
                 <option value="volunteer">Volunteer</option>
                 <option value="request">Request Digital Accessibility for my site</option>
@@ -66,7 +66,7 @@
                     <label for="pay-card">Payment Information</label>
                     <button id="pay-card" class="btn-large">Credit Card</button>
                     <button id="pay-bank" class="btn-large">Bank Account</button>
-                    
+
                     <div class="divider"></div>
 
                     <section id="credit-card" class="section">
@@ -109,7 +109,7 @@
                 </select>
             </section>
 
-            <textarea type="text" id="message" name="message" class="materialize-textarea"
+            <textarea type="text" id="message" name="message" class="materialize-textarea col s12"
                 placeholder="Please give us a message!"></textarea>
 
             <button type="submit" class="btn">Send</button>
