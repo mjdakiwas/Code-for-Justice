@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,14 +17,14 @@
 
     <main class="container">
         <h1>Contact Us!</h1>
-        <form class="row">
-            <div class="input-field col s6">
-                <input type="text" id="fname" name="fname" required>
+        <form id="contact-form">
+            <div class="input-field col s12">
+                <input type="text" id="fname" name="fname" placeholder="First Name" required>
                 <label for="fname">First Name</label>
             </div>
 
-            <div class="input-field col s6">
-                <input type="text" id="lname" name="lname" required>
+            <div class="input-field col s12">
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required>
                 <label for="lname">Last Name</label>
             </div>
 
@@ -33,92 +35,176 @@
             </div>
 
             <div class="input-field col s12">
-                <input type="tel" id="phone-num" name="phone-num" placeholder="Phone Number">
-                <label for="phone-num">
-                    Phone Number</label>
+                <input type="tel" id="phone-num" name="phone-num" placeholder="ex. (000)-000-0000">
+                <label for="phone-num">Phone Number</label>
             </div>
 
-            <select id="contact-select" required>
-                <option value="">Reason for contact</option>
-                <option value="donate">Donate</option>
-                <option value="volunteer">Volunteer</option>
-                <option value="request">Request Digital Accessibility for my site</option>
-            </select>
+            <div class="input-field col s12">
+                <select id="contact-select" name="contact-select" required>
+                    <option value="" disabled selected>Reason for contact</option>
+                    <option value="donate">Donate</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="request">Request Digital Accessibility for my site</option>
+                </select>
+                <label for="contact-select">Reason for Contact</label>
+            </div>
 
-            <section id="donate" class="section">
-                <div class="divider"></div>
-                <section class="section">
-                    <label for="amount">Choose a Donation Amount
-                        <button id="5" class="btn-large">$5</button>
-                        <button id="10" class="btn-large">$10</button>
-                        <button id="25" class="btn-large">$25</button>
-                        <button id="50" class="btn-large">$50</button>
-                        <button id="100" class="btn-large">$100</button>
-                        <label for="custom-amount">
-                            <input type="number" id="custom-amount" name="custom-amount" placeholder="Custom Amount">
-                            Custom Amount</label>
-                    </label>
+            <section id="donate" class="section col s12">
+                <h2>Donation Amount</h2>
+                <section class="section col s12">
+                    <div class="input-field">
+                        <p class="caption">Choose a Donation Amount</p>
+                        <section id="amount" class="section">
+                            <button id="5" class="btn-large">$5</button>
+                            <button id="10" class="btn-large">$10</button>
+                            <button id="25" class="btn-large">$25</button>
+                            <button id="50" class="btn-large">$50</button>
+                            <button id="100" class="btn-large">$100</button>
+                            <button id="250" class="btn-large">$250</button>
+                        </section>
+                    </div>
+
+                    <div id="or-divider" class="valign-wrapper">
+                        <div class="divider"></div>
+                        <p class="caption">or</p>
+                        <div class="divider"></div>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">attach_money</i>
+                        <input type="number" id="custom-amount" name="custom-amount" placeholder="Enter custom amount">
+                        <label for="custom-amount">Custom Amount</label>
+                    </div>
+
+                    <p class="col s12">
+                        <label for="recur">
+                            <input type="checkbox" id="recur" name="recur">
+                            <span>Make this a Recurring Donation</span>
+                        </label>
+                    </p>
                 </section>
 
-                <div class="divider"></div>
+                <section id="pay-method" class="section col s12">
+                    <h2>Payment Information</h2>
+                    <ul id="pay-info" class="tabs">
+                        <li class="tab col s6">
+                            <a id="pay-card" href="#credit-card">Credit Card</a>
+                        </li>
+                        <li class="tab col s6">
+                            <a id="pay-bank" href="#bank-acct">Bank Account</a>
+                        </li>
+                    </ul>
 
-                <section class="section">
-                    <label for="pay-card">Payment Information</label>
-                    <button id="pay-card" class="btn-large">Credit Card</button>
-                    <button id="pay-bank" class="btn-large">Bank Account</button>
-                    
-                    <div class="divider"></div>
+                    <section id="credit-card">
+                        <div class="divider"></div>
+                        <h3>Donate by Credit Card</h3>
+                        <div class="input-field col s12">
+                            <input type="text" id="card-name" name="card-name" required>
+                            <label for="card-name">Card Holder's Name</label>
+                        </div>
 
-                    <section id="credit-card" class="section">
-                        <h2>Pay by Credit Card</h2>
-                        <label for="card-num">Card Number</label>
-                        <input type="number" id="card-num" name="card-num">
+                        <div class="input-field col s12">
+                            <input type="number" id="card-num" name="card-num" required>
+                            <label for="card-num">Card Number</label>
+                        </div>
 
-                        <label for="exp-date">Expiration</label>
-                        <input type="date" id="exp-date" name="exp-date">
+                        <div class="input-field col s6">
+                            <input type="text" id="exp-date" name="exp-date" class="datepicker" required>
+                            <label for="exp-date">Expiration</label>
+                        </div>
 
-                        <label for="cvc">Verification</label>
-                        <input type="number" id="cvc" name="cvc">
+                        <div class="input-field col s6">
+                            <input type="number" id="cvc" name="cvc" required>
+                            <label for="cvc">Security Number</label>
+                        </div>
+                    </section>
+
+                    <section id="bank-acct">
+                        <h3>Donate by Bank Account</h3>
+                        <button id="bank" class="btn-large modal-trigger" data-target="404">Connect Bank
+                            Account</button>
+                    </section>
+
+                    <section id="404" class="modal">
+                        <div class="modal-content">
+                            <div class="progress">
+                                <div class="indeterminate"></div>
+                            </div>
+                            <p class="caption">Sorry, something went wrong. Please try again later!</p>
+                        </div>
                     </section>
                 </section>
-                <div class="divider"></div>
             </section>
 
-            <section id="volunteer">
-                <label for="volunteer-type">Volunteering Type</label>
-                <select id="volunteer-type">
-                    <option value="">Choose a volunteering opportunity</option>
-                    <option value="program">Program Volunteer</option>
-                    <option value="event">Event Volunteer</option>
-                    <option value="develop">Digital Accessibility Developer Volunteer</option>
-                </select>
+            <section id="volunteer" class="section col s12">
+                <div class="input-field">
+                    <select id="volunteer-type">
+                        <option value="" disabled selected>Choose a volunteering opportunity</option>
+                        <option value="program">Program Volunteer</option>
+                        <option value="event">Event Volunteer</option>
+                        <option value="develop">Digital Accessibility Developer Volunteer</option>
+                    </select>
+                    <label for="volunteer-type">Volunteering Type</label>
+                </div>
 
-                <section id="program"></section>
-
-                <section id="event"></section>
-
-                <section id="develop"></section>
+                <div class="chips chips-placeholder chips-autocomplete input-field">
+                    <p>List your skills</p>
+                </div>
             </section>
 
-            <section id="request">
-                <label for="website-type">What is the site for?</label>
-                <select id="website-type">
-                    <option value="">Choose website purpose</option>
-                    <option value="personal">Personal Project</option>
-                    <option value="business">Small Business</option>
-                </select>
+            <section id="request" class="section col s12">
+                <div class="input-field">
+                    <select id="website-type">
+                        <option value="" disabled selected>Choose website purpose</option>
+                        <option value="personal">Personal Project</option>
+                        <option value="business">Small Business</option>
+                    </select>
+                    <label for="website-type">What is the site for?</label>
+                </div>
+
+                <div id="business" class="input-field">
+                    <input type="text" id="org-name" name="org-name" required>
+                    <label for="org-name">Organization Name</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" id="role" name="role">
+                    <label for="role">What is your role?</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="url" id="url" name="url" required>
+                    <label for="url">Website URL</label>
+                </div>
+
+                <div class="input-field">
+                    <select id="redesign-deadline">
+                        <option value="" disabled selected>Select redesign deadline</option>
+                        <option value="asap">As soon as possible!</option>
+                        <option value="1-2">1-2 Months</option>
+                        <option value="3-4">3-4 Months</option>
+                        <option value="5+">5+ Months</option>
+                    </select>
+                    <label for="redesign-deadline">How soon do you need to redesign your website?</label>
+                </div>
             </section>
 
-            <textarea type="text" id="message" name="message" class="materialize-textarea"
-                placeholder="Please give us a message!"></textarea>
+            <div class="input-field col s12">
+                <textarea type="text" id="message" name="message" class="materialize-textarea col s12"
+                    placeholder="Please give us a message!"></textarea>
+            </div>
 
-            <button type="submit" class="btn">Send</button>
+            <div class="input-field col s12">
+                <button type="submit" class="btn">Send
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
         </form>
     </main>
 
     <!-- <footer></footer> -->
     <script src="script.js"></script>
-    <script src="materialize/js/materialize.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
 </body>
 
 </html>

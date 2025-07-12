@@ -1,3 +1,105 @@
+/* start of index css */
+.center {
+    text-align: center;
+    vertical-align: middle
+}
+
+.ellipse {
+  -webkit-clip-path: ellipse(50% 65% at 70% 50%);
+  clip-path: ellipse(50% 65% at 70% 50%);
+}
+
+a {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: .5rem;
+    color: #fff !important;
+}
+
+#mission {
+    display: flex;
+    flex-direction: column;
+}
+
+#opportunity {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact {
+    position: relative;
+    z-index: 100;
+}
+
+#contact > section {
+    margin-bottom: 0;
+}
+
+.statement {
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+
+.statement h2 {
+    position: absolute;
+}
+
+.statement svg {
+    display: block;
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+}
+
+.custom-shape-divider-bottom-1752309162 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -100;
+}
+
+.custom-shape-divider-bottom-1752309162 svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 270px;
+}
+
+.custom-shape-divider-bottom-1752309162 .shape-fill {
+    fill: #185D33;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1752309162 svg {
+        width: calc(179% + 1.3px);
+        height: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    #mission {
+        flex-direction: row;
+    }
+
+    #opportunity {
+        flex-direction: row;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1752309162 svg {
+        width: calc(190% + 1.3px);
+        height: 500px;
+    }
+}
+/* end of index css*/
+
 /* Modifying the CSS of about-org.html*/
 .about-quote {
 font-size: 2.5vw;
@@ -70,7 +172,6 @@ margin: auto;
 visibility: hidden;
 }
 }
-
 /* End of CSS for about-org.html*/
 
 /* Program & Events Page, Kevin Nie's code below */
@@ -146,5 +247,28 @@ img {
 
 #request {
     display: none;
+}
+
+#amount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+#amount button {
+    width: 9rem;
+}
+
+#business {
+    display: none;
+}
+
+.divider {
+    width: 100%;
+}
+
+#or-divider {
+    gap: 20px;
 }
 /* end of contact css */
