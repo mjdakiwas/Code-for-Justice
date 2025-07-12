@@ -18,6 +18,18 @@ background-color: #185D33;
 position: fixed;
 top: 0;
 }
+.justin-row {
+width: 100%;
+}
+.card {
+width: 50%;
+margin: auto;
+}
+.card-image {
+max-width: 500px;
+padding-top: 20px;
+margin: auto;
+}
 
 @media screen and (max-width: 1200px) {
 .row {
@@ -32,13 +44,26 @@ width: 100%;
 font-size: min(24px);
 margin-top: 30px;
 }
+
+.card {
+margin: auto;
+width: 50%;
+}
 }
 
 @media screen and (max-width: 800px) {
 .about-image {
 margin-top: 56px;
 }
+.card {
+width: 100%;
 }
+.card-image {
+max-width: 400px;
+margin: auto;
+}
+}
+
 
 @media screen and (max-width: 430px) {
 .brand-logo {
