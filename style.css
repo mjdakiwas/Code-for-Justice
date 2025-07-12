@@ -195,9 +195,7 @@
     border-color: #185D33;
     margin-top: 100px;
 }
-.col {
-width: 50%;
-}
+
 #dropdown1 {
     width: 300px !important;
 }
@@ -209,17 +207,26 @@ width: 50%;
 .navbar {
 background-color: #185D33;
 }
-
+.about-col {
+width: 45%;
+margin: auto;
+}
 .card {
-background-color: #caeed8;
+margin: auto;
+width: 40%;
+}
+
+.card-image {
+margin: auto;
+max-width: 400px;
 }
 
 @media screen and (max-width: 1200px) {
-.row {
-display: block;
+.about-row {
+display: flex;
 padding: 8vw;
 }
-.col{
+.about-col {
 width: 100%;
 }
 
