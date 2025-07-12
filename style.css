@@ -13,7 +13,7 @@ a {
     display: flex;
     flex-wrap: nowrap;
     gap: .5rem;
-    color: #fff !important;
+    color: #fff;
 }
 
 #mission {
@@ -106,9 +106,7 @@ font-size: 2.5vw;
 border-color: #185D33;
 margin-top: 100px;
 }
-.col {
-width: 50%;
-}
+
 #dropdown1 {
 width: 300px !important;
 }
@@ -118,17 +116,26 @@ color: #185D33;
 .navbar {
 background-color: #185D33;
 }
-
+.about-col {
+width: 45%;
+margin: auto;
+}
 .card {
-background-color: #caeed8;
+margin: auto;
+width: 40%;
+}
+
+.card-image {
+margin: auto;
+max-width: 400px;
 }
 
 @media screen and (max-width: 1200px) {
-.row {
-display: block;
+.about-row {
+display: flex;
 padding: 8vw;
 }
-.col{
+.about-col {
 width: 100%;
 }
 
