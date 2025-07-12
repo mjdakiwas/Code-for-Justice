@@ -216,24 +216,11 @@
 }
 
 .navbar {
-    background-color: #185D33;
-    position: fixed;
-    top: 0;
-}
-
-.justin-row {
-    width: 100%;
+background-color: #185D33;
 }
 
 .card {
-    width: 50%;
-    margin: auto;
-}
-
-.card-image {
-    max-width: 500px;
-    padding-top: 20px;
-    margin: auto;
+background-color: #caeed8;
 }
 
 @media screen and (max-width: 1200px) {
@@ -279,6 +266,7 @@ text-align: center;
         visibility: hidden;
     }
 }
+
 
 /* End of CSS for about-org.html*/
 
@@ -382,3 +370,5 @@ text-align: center;
 }
 
 /* end of contact css */
+
+/* Nia's CSS: What is Digital Accessibility?*/
