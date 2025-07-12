@@ -1,28 +1,240 @@
+/* start of index css */
+.center {
+    text-align: center;
+    vertical-align: middle
+}
+
+.ellipse {
+  -webkit-clip-path: ellipse(50% 65% at 70% 50%);
+  clip-path: ellipse(50% 65% at 70% 50%);
+}
+
+a {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: .5rem;
+    color: #fff !important;
+}
+
+#mission {
+    display: flex;
+    flex-direction: column;
+}
+
+#opportunity {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact {
+    position: relative;
+    z-index: 100;
+}
+
+#contact > section {
+    margin-bottom: 0;
+}
+
+.statement {
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+
+.statement h2 {
+    position: absolute;
+}
+
+.statement svg {
+    display: block;
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+}
+
+.custom-shape-divider-bottom-1752309162 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -100;
+}
+
+.custom-shape-divider-bottom-1752309162 svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 270px;
+}
+
+.custom-shape-divider-bottom-1752309162 .shape-fill {
+    fill: #185D33;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1752309162 svg {
+        width: calc(179% + 1.3px);
+        height: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    #mission {
+        flex-direction: row;
+    }
+
+    #opportunity {
+        flex-direction: row;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1752309162 svg {
+        width: calc(190% + 1.3px);
+        height: 500px;
+    }
+}
+/* end of index css*/
+
 /* Modifying the CSS of about-org.html*/
 .about-quote {
 font-size: 2.5vw;
 border-color: #185D33;
+margin-top: 100px;
+}
+.col {
+width: 50%;
+}
+#dropdown1 {
+width: 300px !important;
+}
+.dropdown-content li > a {
+color: #185D33;
+}
+.navbar {
+background-color: #185D33;
+position: fixed;
+top: 0;
+}
+.justin-row {
+width: 100%;
+}
+.card {
+width: 50%;
+margin: auto;
+}
+.card-image {
+max-width: 500px;
+padding-top: 20px;
+margin: auto;
 }
 
+@media screen and (max-width: 1200px) {
+.row {
+display: block;
+padding: 8vw;
+}
+.col{
+width: 100%;
+}
+
+.about-quote {
+font-size: min(24px);
+margin-top: 30px;
+}
+
+.card {
+margin: auto;
+width: 50%;
+}
+}
+
+@media screen and (max-width: 800px) {
+.about-image {
+margin-top: 56px;
+}
+.card {
+width: 100%;
+}
+.card-image {
+max-width: 400px;
+margin: auto;
+}
+}
+
+
+@media screen and (max-width: 430px) {
+.brand-logo {
+visibility: hidden;
+}
+}
 /* End of CSS for about-org.html*/
 
 /* Program & Events Page, Kevin Nie's code below */
 #statement_section {
+    background-color: #185D33;
+    color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .program_header {
     text-align: center;
+    font-size: 4vw;
+    margin: 1px;
+    padding: 15px;
 }
 
-.grid__three_rows {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.event_header {
+    text-align: center;
+    font-size: 4vw;
+    margin: 1px;
+    padding: 15px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    border-width: 1em;
+}
 
+.grid_first__batch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grid_second__batch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button_align {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.button {
+    background-color: #185D33;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 2.3vw;
+    padding: 10px 15px;
+}
+
+.button:hover {
+    background-color: black;
+}
 /* Program & Events Page, Kevin Nie's code above */
+
 
 /* start of contact css */
 #donate {
@@ -35,5 +247,28 @@ border-color: #185D33;
 
 #request {
     display: none;
+}
+
+#amount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+#amount button {
+    width: 9rem;
+}
+
+#business {
+    display: none;
+}
+
+.divider {
+    width: 100%;
+}
+
+#or-divider {
+    gap: 20px;
 }
 /* end of contact css */
