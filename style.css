@@ -206,7 +206,16 @@
     border-color: #185D33;
     margin-top: 100px;
 }
-
+.brand-logo {
+width: 250px;
+height: 100px;
+vertical-align: middle;
+}
+.nav-logo {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
 #dropdown1 {
     width: 300px !important;
 }
@@ -279,10 +288,12 @@ text-align: center;
 }
 
 
-@media screen and (max-width: 430px) {
-    .brand-logo {
-        visibility: hidden;
-    }
+@media screen and (max-width: 600px) {
+.brand-logo {
+width: 26vw;
+height: 68px;
+vertical-align: middle;
+}
 }
 
 
