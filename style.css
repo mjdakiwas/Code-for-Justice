@@ -33,6 +33,19 @@ font-size: min(24px);
 margin-top: 30px;
 }
 }
+
+@media screen and (max-width: 800px) {
+.about-image {
+margin-top: 56px;
+}
+}
+
+@media screen and (max-width: 430px) {
+.brand-logo {
+visibility: hidden;
+}
+}
+
 /* End of CSS for about-org.html*/
 
 /* Program & Events Page, Kevin Nie's code below */
