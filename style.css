@@ -117,20 +117,10 @@ color: #185D33;
 }
 .navbar {
 background-color: #185D33;
-position: fixed;
-top: 0;
 }
-.justin-row {
-width: 100%;
-}
+
 .card {
-width: 50%;
-margin: auto;
-}
-.card-image {
-max-width: 500px;
-padding-top: 20px;
-margin: auto;
+background-color: #caeed8;
 }
 
 @media screen and (max-width: 1200px) {
@@ -175,6 +165,7 @@ text-align: center;
 visibility: hidden;
 }
 }
+
 /* End of CSS for about-org.html*/
 
 /* Program & Events Page, Kevin Nie's code below */
@@ -275,3 +266,5 @@ img {
     gap: 20px;
 }
 /* end of contact css */
+
+/* Nia's CSS: What is Digital Accessibility?*/
