@@ -104,24 +104,137 @@ a {
 .about-quote {
 font-size: 2.5vw;
 border-color: #185D33;
+margin-top: 100px;
+}
+.col {
+width: 50%;
+}
+#dropdown1 {
+width: 300px !important;
+}
+.dropdown-content li > a {
+color: #185D33;
+}
+.navbar {
+background-color: #185D33;
+position: fixed;
+top: 0;
+}
+.justin-row {
+width: 100%;
+}
+.card {
+width: 50%;
+margin: auto;
+}
+.card-image {
+max-width: 500px;
+padding-top: 20px;
+margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+.row {
+display: block;
+padding: 8vw;
+}
+.col{
+width: 100%;
+}
+
+.about-quote {
+font-size: min(24px);
+margin-top: 30px;
+}
+
+.card {
+margin: auto;
+width: 50%;
+}
+}
+
+@media screen and (max-width: 800px) {
+.about-image {
+margin-top: 56px;
+}
+.card {
+width: 100%;
+}
+.card-image {
+max-width: 400px;
+margin: auto;
+}
+}
+
+
+@media screen and (max-width: 430px) {
+.brand-logo {
+visibility: hidden;
+}
 }
 /* End of CSS for about-org.html*/
 
 /* Program & Events Page, Kevin Nie's code below */
 #statement_section {
+    background-color: #185D33;
+    color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .program_header {
     text-align: center;
+    font-size: 4vw;
+    margin: 1px;
+    padding: 15px;
 }
 
-.grid__three_rows {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.event_header {
+    text-align: center;
+    font-size: 4vw;
+    margin: 1px;
+    padding: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-width: 1em;
+}
+
+.grid_first__batch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grid_second__batch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button_align {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.button {
+    background-color: #185D33;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 2.3vw;
+    padding: 10px 15px;
+}
+
+.button:hover {
+    background-color: black;
 }
 /* Program & Events Page, Kevin Nie's code above */
+
 
 /* start of contact css */
 #donate {

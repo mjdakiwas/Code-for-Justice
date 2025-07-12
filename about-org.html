@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Learn about AllAccess, a nonprofit geared towards making the internet more accessible for people of all abilities">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
       <script src="materialize/js/materialize.js"></script>
      <link rel="stylesheet" href="materialize/css/materialize.css">
      <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="DA-info.html">What is Digital Accessibility?</a></li>
+        <li><a href="programs-events.html">Programs & Events</a></li>
+        <li><a href="sponsors-partners.html">Sponsors & Partners</a></li>
+    </ul>
+    <nav class="nav navbar">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo left">Logo</a>
+            <ul class="right">
+                <li class="active"><a href="about-org.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Explore</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="about-image">
         <img class ="responsive-img" src="phone-user.jpg" alt="A woman smiling and holding a to-go cup of tea while using her phone in public">
     </div>
     <section class="row valign-wrapper">
-        <div class="col s6">
+        <div class="col">
             <h1 class="center-align">About Us</h1>
             <p class="flow-text center align">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -26,7 +43,7 @@
            voluptatem sequi nesciunt.
             </p>
         </div>
-        <div class="col s6">
+        <div class="col">
             <blockquote cite class="flow-text about-quote">
             "Many organisations are waking up to the fact that embracing accessibility leads to multiple benefits – 
             reducing legal risks, strengthening brand presence, improving customer experience and colleague productivity."
@@ -34,5 +51,18 @@
             <p style="margin-left: 20px;" class="flow-text">- Paul Smyth, Head of Digital Accessibility, Barclays</p>
         </div>
     </section>
+   <div class="justin-row">
+      <div class="card">
+            <div class="card-image">
+                <img alt="professional headshot of CEO Justin McNeil" class="justin responzive-img" src="Justin.png">
+            </div>
+            <div class="card-content">
+                <p class="flow-text">"AllAccess helped me get my website compliant with the accessibility standards of industry leaders like Google."</p>
+            </div>
+            <div class="card-action">
+                <a style="color: black;" href="sponsors-partners.html">Justin McNeil, CEO</a>
+            </div>
+      </div>
+  </div>
 </body>
 </html>
