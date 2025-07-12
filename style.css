@@ -13,7 +13,7 @@ a {
     display: flex;
     flex-wrap: nowrap;
     gap: .5rem;
-    color: #fff !important;
+    color: #fff;
 }
 
 #mission {
@@ -106,9 +106,7 @@ font-size: 2.5vw;
 border-color: #185D33;
 margin-top: 100px;
 }
-.col {
-width: 50%;
-}
+
 #dropdown1 {
 width: 300px !important;
 }
@@ -117,28 +115,27 @@ color: #185D33;
 }
 .navbar {
 background-color: #185D33;
-position: fixed;
-top: 0;
 }
-.justin-row {
-width: 100%;
+.about-col {
+width: 45%;
+margin: auto;
 }
 .card {
-width: 50%;
 margin: auto;
+width: 40%;
 }
+
 .card-image {
-max-width: 500px;
-padding-top: 20px;
 margin: auto;
+max-width: 400px;
 }
 
 @media screen and (max-width: 1200px) {
-.row {
-display: block;
+.about-row {
+display: flex;
 padding: 8vw;
 }
-.col{
+.about-col {
 width: 100%;
 }
 
@@ -164,6 +161,9 @@ width: 100%;
 max-width: 400px;
 margin: auto;
 }
+.card-content {
+text-align: center;
+}
 }
 
 
@@ -172,6 +172,7 @@ margin: auto;
 visibility: hidden;
 }
 }
+
 /* End of CSS for about-org.html*/
 
 /* Program & Events Page, Kevin Nie's code below */
@@ -272,3 +273,5 @@ img {
     gap: 20px;
 }
 /* end of contact css */
+
+/* Nia's CSS: What is Digital Accessibility?*/
