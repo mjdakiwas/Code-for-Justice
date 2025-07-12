@@ -115,14 +115,24 @@ color: #185D33;
 }
 .navbar {
 background-color: #185D33;
+position: relative;
+}
+.navbar-fixed {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 4;
 }
 .about-col {
 width: 45%;
 margin: auto;
 }
 .card {
+padding-top: 30px;
 margin: auto;
 width: 40%;
+margin-top: 5vh;
+margin-bottom: 10vh;
 }
 
 .card-image {
