@@ -255,6 +255,9 @@ width: 100%;
 max-width: 400px;
 margin: auto;
 }
+.card-content {
+text-align: center;
+}
 }
 
 
