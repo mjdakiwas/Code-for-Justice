@@ -36,4 +36,16 @@ border-color: #185D33;
 #request {
     display: none;
 }
+
+#donation-amt {
+    display: flex !important;
+    align-items: center !important;
+}
+
+#amount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 /* end of contact css */

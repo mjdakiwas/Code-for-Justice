@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
@@ -13,7 +14,7 @@
 <body>
     <!-- nav bar -->
 
-    <main class="container">
+    <main class="container col s12">
         <h1>Contact Us!</h1>
         <form id="contact-form" class="row">
             <div class="input-field col s6">
@@ -33,9 +34,8 @@
             </div>
 
             <div class="input-field col s12">
-                <input type="tel" id="phone-num" name="phone-num" placeholder="Phone Number">
-                <label for="phone-num">
-                    Phone Number</label>
+                <input type="tel" id="phone-num" name="phone-num" placeholder="ex. (000)-000-0000">
+                <label for="phone-num">Phone Number</label>
             </div>
 
             <div class="input-field col s12">
@@ -45,26 +45,36 @@
                     <option value="volunteer">Volunteer</option>
                     <option value="request">Request Digital Accessibility for my site</option>
                 </select>
+                <label for="contact-select">Reason for Contact</label>
             </div>
 
-            <section id="donate" class="section">
-                <div class="divider"></div>
-                <div class="input-field col s12">
-                    <label for="amount">Choose a Donation Amount</label>
-                    <button id="5" class="btn-large">$5</button>
-                    <button id="10" class="btn-large">$10</button>
-                    <button id="25" class="btn-large">$25</button>
-                    <button id="50" class="btn-large">$50</button>
-                    <button id="100" class="btn-large">$100</button>
-                </div>
-                <div class="input-field col s12">
-                    <label for="custom-amount">Custom Amount</label>
-                    <input type="number" id="custom-amount" name="custom-amount" placeholder="Custom Amount">
-                </div>
+            <section id="donate" class="section col s12">
+                <section class="section col s12">
+                    <div class="input-field">
+                        <p class="caption">Choose a Donation Amount</p>
+                        <section id="amount" class="section">
+                            <button id="5" class="btn-large">$5</button>
+                            <button id="10" class="btn-large">$10</button>
+                            <button id="25" class="btn-large">$25</button>
+                            <button id="50" class="btn-large">$50</button>
+                            <button id="100" class="btn-large">$100</button>
+                        </section>
+                    </div>
 
-                <div class="divider"></div>
+                    <div class="valign-wrapper">
+                        <div class="divider col s5"></div>
+                        <p class="caption col s2 center">or</p>
+                        <div class="divider col s5"></div>
+                    </div>
 
-                <section class="section">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">attach_money</i>
+                        <input type="number" id="custom-amount" name="custom-amount" placeholder="Enter custom amount">
+                        <label for="custom-amount">Custom Amount</label>
+                    </div>
+                </section>
+
+                <section id="pay-section" class="section col s12">
                     <h2>Payment Information</h2>
                     <ul id="pay-info" class="tabs">
                         <li class="tab col s6">
@@ -79,53 +89,49 @@
                         <div class="divider"></div>
                         <h3>Donate by Credit Card</h3>
                         <div class="input-field col s12">
+                            <input type="number" id="card-num" name="card-num" required>
                             <label for="card-num">Card Number</label>
-                            <input type="number" id="card-num" name="card-num">
                         </div>
 
                         <div class="input-field col s6">
+                            <input type="date" id="exp-date" name="exp-date" required>
                             <label for="exp-date">Expiration</label>
-                            <input type="date" id="exp-date" name="exp-date">
                         </div>
 
                         <div class="input-field col s6">
-                            <label for="cvc">Verification</label>
-                            <input type="number" id="cvc" name="cvc">
+                            <input type="number" id="cvc" name="cvc" required>
+                            <label for="cvc">Verification Number</label>
                         </div>
                     </section>
 
                     <section id="bank-acct">
-                        <div class="divider"></div>
                         <h3>Donate by Bank Account</h3>
                     </section>
                 </section>
-
-                <div class="divider"></div>
+                <div class="divider col s12"></div>
             </section>
 
-            <section id="volunteer">
-                <label for="volunteer-type">Volunteering Type</label>
+            <section id="volunteer" class="input-field col s12">
                 <select id="volunteer-type">
-                    <option value="">Choose a volunteering opportunity</option>
+                    <option value="" disabled selected>Choose a volunteering opportunity</option>
                     <option value="program">Program Volunteer</option>
                     <option value="event">Event Volunteer</option>
                     <option value="develop">Digital Accessibility Developer Volunteer</option>
                 </select>
+                <label for="volunteer-type">Volunteering Type</label>
 
-                <section id="program"></section>
-
-                <section id="event"></section>
-
-                <section id="develop"></section>
+                <p class="caption">List your skills</p>
+                <div class="chips chips-placeholder chips-autocomplete input-field">
+                </div>
             </section>
 
-            <section id="request">
-                <label for="website-type">What is the site for?</label>
+            <section id="request" class="input-field col s12">
                 <select id="website-type">
-                    <option value="">Choose website purpose</option>
+                    <option value="" disabled selected>Choose website purpose</option>
                     <option value="personal">Personal Project</option>
                     <option value="business">Small Business</option>
                 </select>
+                <label for="website-type">What is the site for?</label>
             </section>
 
             <div class="input-field col s12">
@@ -133,8 +139,10 @@
                     placeholder="Please give us a message!"></textarea>
             </div>
 
-            <div class="input-field col s6">
-                <button type="submit" class="btn">Send</button>
+            <div class="input-field">
+                <button type="submit" class="btn">Send
+                    <i class="material-icons right">send</i>
+                </button>
             </div>
         </form>
     </main>
