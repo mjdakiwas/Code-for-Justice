@@ -258,18 +258,19 @@
 }
 
 @media screen and (max-width: 800px) {
-    .about-image {
-        margin-top: 56px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .card-image {
-        max-width: 400px;
-        margin: auto;
-    }
+.about-image {
+margin-top: 56px;
+}
+.card {
+width: 100%;
+}
+.card-image {
+max-width: 400px;
+margin: auto;
+}
+.card-content {
+text-align: center;
+}
 }
 
 
