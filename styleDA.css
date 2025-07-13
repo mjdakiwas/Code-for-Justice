@@ -37,7 +37,6 @@ h2{
 }
 
 .da-head-section{
-    font-size: 55px;
     margin-bottom: 10px;
 }
 
@@ -133,11 +132,11 @@ h2{
     }
 }
 
-@media screen and (max-width){
+@media screen and (max-width: 500px){
     body{
         font-size: 15px;
     }
     h2{
-        font-size: 20px;
+        font-size: 10vw;
     }
 }
