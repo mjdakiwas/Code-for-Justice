@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('select').formSelect();
     $('.tabs').tabs();
     $('.chips').chips();
@@ -28,6 +28,35 @@ $(document).ready(function() {
     $('.parallax').parallax();
 })
 
+// index js
+/*$(document).ready(function () {
+    var img_width = $('#opening-img').css('width');
+    var condition = $.Deferred();
+
+    $.when(condition).done(function (bool) {
+        if (bool == true) {
+            $('.parallax-container').removeClass('mask-index');
+        } else {
+            $('.parallax-container').addClass('mask-index');
+        }
+    })
+
+    condition.resolve(img_width <= '425px');
+})*/
+var div = window.matchMedia('(max-width: 600px');
+function windowChange(div) {
+    if (div.matches) {
+        $('.parallax-container').removeClass('mask-index');
+    } else {
+        $('.parallax-container').addClass('mask-index');
+    }
+}
+windowChange(div);
+div.addEventListener('change', function() {
+    windowChange(div);
+})
+
+// contact js
 let contact_select = document.querySelector('#contact-select');
 ($(contact_select).on('change', function () {
     console.log('contact type changed')

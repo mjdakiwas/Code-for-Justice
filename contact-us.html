@@ -12,8 +12,19 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <!-- nav bar -->
+<body id="contact">
+    <div class="navbar-fixed">
+        <nav class="nav navbar">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo left">Logo</a>
+                <ul class="right">
+                    <li class="active"><a href="about-org.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Explore</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
     <main class="container">
         <h1>Contact Us!</h1>
@@ -113,7 +124,7 @@
                             <label for="exp-date">Expiration</label>
                         </div>
 
-                        <div class="input-field col s6">
+                        <div class="input-field col s6 ">
                             <input type="number" id="cvc" name="cvc" required>
                             <label for="cvc">Security Number</label>
                         </div>
