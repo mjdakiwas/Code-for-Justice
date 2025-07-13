@@ -197,44 +197,117 @@ vertical-align: middle;
 /* End of CSS for about-org.html*/
 
 /* Program & Events Page, Kevin Nie's code below */
-#statement_section {
-    background-color: #185D33;
-    color: white;
+
+.statement_header{
+    background-color:#36c46d31;
+    color: #185D33;
+    padding: 10px;
     text-align: center;
-    font-size: 1.5vw;
+    border-radius: 50px;
+}
+
+
+
+#statement_section {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    margin-top: 10vh;
+    font-size: 4vw;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 .program_header {
     text-align: center;
-    font-size: 4vw;
+    font-size:calc(24px + 2vw);
     margin: 1px;
     padding: 15px;
 }
 
 .event_header {
     text-align: center;
-    font-size: 4vw;
+    font-size:calc(24px + 2vw);
     margin: 1px;
     padding: 15px;
 }
 
+
+
+.grid__pop-up_header {
+    font-size: 2.5vh;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+
+p {
+ font-size: 2vh;
+ margin: 20px;
+ visibility: hidden;
+ opacity: 1;
+
+}
+
 img {
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
     border-width: 1em;
+}
+
+@media screen and (max-width: 800px) {
+    .grid_first__batch {
+        flex-direction: column;
+    }
+
+    .grid_second__batch {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .statement_header {
+        border-radius: 0px;
+    }
+}
+
+
+.grid_three__rows {
+    margin-top: 10vh;
 }
 
 .grid_first__batch {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .grid_second__batch {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 }
+
+.grid_initiator {
+    height: 450px;
+    overflow: hidden;
+}
+
+.grid_pop-up {
+    background-color: rgba(255, 255, 255, 0.748);
+    color: black;
+    height: 400px;
+    width: 300px;
+    padding: 1px;
+    position: relative;
+    bottom: 100px;
+    transition: 0.5s;
+}
+
+
 
 .button_align {
     display: flex;
@@ -248,14 +321,60 @@ img {
     color: white;
     text-decoration: none;
     border-radius: 50px;
-    font-size: 2.3vw;
-    padding: 10px 15px;
+    font-size:calc(20px + 1.5vw);
+    
+    padding: 5px 30px;
 }
 
 .button:hover {
-    background-color: black;
+    background-color: #228548;
 }
+
+.grid_initiator:hover {
+    cursor: pointer;
+}
+
+.grid_initiator:hover .grid_pop-up {
+    height: 250px;
+    bottom: 240px;
+    background: #f7f7f7;
+}
+
+.grid_initiator:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* Program & Events Page, Kevin Nie's code above */
+
+/* footer section below */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #185D33;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+.footer_link {
+    color: white;
+    padding: 1vw;
+
+}
+
+.footer_link:hover {
+    color: #8DDFAD;
+}
+
+.social_icon {
+    margin-left: 20px;
+}
+
+
+
+/* footer section above */
 
 
 /* start of contact css */
