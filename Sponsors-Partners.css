@@ -1,0 +1,50 @@
+/*CSS for Sponsors-Partners*/
+
+body {
+    background-color: #CAEED8;
+}
+
+img {
+    height: auto;
+    width: 15vw;
+    border-radius: 50%;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.sponsor-right {
+    display: flex;
+    justify-content: end;
+    margin-right: 15%;
+}
+
+.sponsor-left {
+    display: flex;
+    justify-content: start;
+    margin-left: 15%;
+}
+
+#pfp {
+    height: auto;
+    width: 15vw;
+    border-radius: 60%;
+}
+
+.partners {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.companies {
+    height: 15vh;
+    width: auto;
+}
+
+
+/* End CSS for Sponsors-Partners*/
