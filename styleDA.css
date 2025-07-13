@@ -14,6 +14,20 @@ main{
     padding: 20px;
 }
 
+#text-animation{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#fly-in-text{
+    opacity: 0.5;
+    transform: translateY(100px);
+    animation: flyIn ease-out forwards;
+    animation-timeline: view(block);
+    animation-range: entry 30% cover 50%; 
+}
+
 h2{
     color: #185D33;
 }
@@ -94,6 +108,17 @@ h2{
 .involved-head-section{
     font-size: 22px;
     margin-bottom: 10px;
+}
+
+@keyframes flyIn{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width: 768px){
