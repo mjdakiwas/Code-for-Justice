@@ -32,28 +32,33 @@ h2{
 }
 
 .matters-section{
- background-color: #caeed8;
- display: flex;
+    padding: 20px;
+    background-color: #caeed8;
+/* display: flex;
  flex-wrap: wrap;
- align-items: center;
+ align-items: center;*/
 }
 
 .DA-img{
-    flex: 1 1 300px;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+
+    /*flex: 1 1 300px;
     max-width: 400px;
     object-fit: cover;
     width: 100%;
     height: auto;
-    border-radius: 6px;
+    border-radius: 6px;*/
 }
 
-.matters-section > p{
+/*.matters-section > p{
     flex: 2 1 200px;
-}
+}*/
 
 .list-section{
     background-color: #caeed8;
-    padding: 30px;
+    padding: 20px;
     margin: 40px 0;
     border: 1px solid #ddd;
 }
@@ -70,6 +75,7 @@ h2{
 .list-section li{
     margin-bottom: 20px;
 }
+
 
 
 .commitment-section{
