@@ -22,11 +22,6 @@
     padding: 3em 0;
 }
 
-/*.ellipse {
-    -webkit-clip-path: ellipse(50% 65% at 70% 50%);
-    clip-path: ellipse(50% 65% at 70% 50%);
-}*/
-
 #header-img section {
     position: absolute;
     text-align: center;
@@ -206,16 +201,19 @@
     border-color: #185D33;
     margin-top: 100px;
 }
+
 .brand-logo {
-width: 250px;
-height: 100px;
-vertical-align: middle;
+    width: 250px;
+    height: 100px;
+    vertical-align: middle;
 }
+
 .nav-logo {
-width: 100%;
-height: 100%;
-object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 #dropdown1 {
     width: 300px !important;
 }
@@ -225,40 +223,44 @@ object-fit: cover;
 }
 
 .navbar {
-background-color: #185D33;
-position: relative;
-}
-.navbar-fixed {
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 4;
-}
-.about-col {
-width: 45%;
-margin: auto;
-}
-.card {
-padding-top: 30px;
-margin: auto;
-width: 40%;
-margin-top: 5vh;
-margin-bottom: 10vh;
+    background-color: #185D33;
+    position: relative;
 }
 
-.card-image {
-margin: auto;
-max-width: 400px;
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.about-col {
+    width: 45%;
+    margin: auto;
+}
+
+#about .card {
+    padding-top: 30px;
+    margin: auto;
+    width: 40%;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+#about .card-image {
+    margin: auto;
+    max-width: 400px;
 }
 
 @media screen and (max-width: 1200px) {
-.about-row {
-display: flex;
-padding: 8vw;
-}
-.about-col {
-width: 100%;
-}
+    .about-row {
+        display: flex;
+        padding: 8vw;
+    }
+
+    .about-col {
+        width: 100%;
+    }
 
     .about-quote {
         font-size: min(24px);
@@ -272,28 +274,31 @@ width: 100%;
 }
 
 @media screen and (max-width: 800px) {
-.about-image {
-margin-top: 56px;
-}
-.card {
-width: 100%;
-}
-.card-image {
-max-width: 400px;
-margin: auto;
-}
-.card-content {
-text-align: center;
-}
+    .about-image {
+        margin-top: 56px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-image {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .card-content {
+        text-align: center;
+    }
 }
 
 
 @media screen and (max-width: 600px) {
-.brand-logo {
-width: 26vw;
-height: 68px;
-vertical-align: middle;
-}
+    .brand-logo {
+        width: 26vw;
+        height: 68px;
+        vertical-align: middle;
+    }
 }
 
 
@@ -301,20 +306,18 @@ vertical-align: middle;
 
 /* Program & Events Page, Kevin Nie's code below */
 
-.statement_header{
-    background-color:#36c46d31;
+.statement_header {
+    background-color: #36c46d31;
     color: #185D33;
     padding: 10px;
     text-align: center;
     border-radius: 50px;
 }
 
-
-
 #statement_section {
     display: flex;
     flex-wrap: wrap;
-   justify-content: center;
+    justify-content: center;
     margin-top: 10vh;
     font-size: 4vw;
     font-family: "Open Sans", sans-serif;
@@ -324,14 +327,14 @@ vertical-align: middle;
 
 .program_header {
     text-align: center;
-    font-size:calc(24px + 2vw);
+    font-size: calc(24px + 2vw);
     margin: 1px;
     padding: 15px;
 }
 
 .event_header {
     text-align: center;
-    font-size:calc(24px + 2vw);
+    font-size: calc(24px + 2vw);
     margin: 1px;
     padding: 15px;
 }
@@ -344,10 +347,10 @@ vertical-align: middle;
 }
 
 p {
- font-size: 2vh;
- margin: 20px;
- visibility: hidden;
- opacity: 1;
+    font-size: 2vh;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 1;
 
 }
 
@@ -422,8 +425,8 @@ img {
     color: white;
     text-decoration: none;
     border-radius: 50px;
-    font-size:calc(20px + 1.5vw);
-    
+    font-size: calc(20px + 1.5vw);
+
     padding: 5px 30px;
 }
 
@@ -472,9 +475,6 @@ footer {
 .social_icon {
     margin-left: 20px;
 }
-
-
-
 /* footer section above */
 
 
