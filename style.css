@@ -1,55 +1,110 @@
 /* start of index css */
 .center {
-    text-align: center;
     vertical-align: middle
 }
 
-.ellipse {
-  -webkit-clip-path: ellipse(50% 65% at 70% 50%);
-  clip-path: ellipse(50% 65% at 70% 50%);
-}
-
-a {
+#index a {
     display: flex;
     flex-wrap: nowrap;
     gap: .5rem;
     color: #fff;
 }
 
-#mission {
-    display: flex;
-    flex-direction: column;
+.relative {
+    position: relative;
+    top: 16rem;
 }
 
-#opportunity {
+.flex {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 3em 0;
+}
+
+#header-img section {
+    position: absolute;
+    text-align: center;
+    top: 3em;
+    line-height: 1.25em;
+    font-size: 3.75rem;
+    height: auto;
+    z-index: 100;
+}
+
+#header-img h1 {
+    margin-bottom: 0;
+    color: #fff;
+    background-color: #185D33;
+}
+
+#index-logo {
+    width: 100%;
+}
+
+.mask-index {
+    -webkit-mask-image: url('Vector.svg');
+    mask-image: url('Vector.svg');
+    mask-repeat: no-repeat;
+}
+
+#header-img {
+    margin: 0;
+    padding: 0;
+}
+
+#statement {
+    position: absolute;
+    top: 36rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: 80%;
+    background-color: #185D33;
+    color: #fff;
+    border-radius: 15px;
+    padding: 1.6em;
+}
+
+#statement p {
+    font-size: 2.5em;
+}
+
+#statement+section {
+    top: 34em;
 }
 
 #contact {
-    position: relative;
-    z-index: 100;
+    top: 40rem;
+    text-align: center;
 }
 
-#contact > section {
+#contact h2 {
+    margin: 1em 0 .5em 0;
+}
+
+#contact .card-title {
     margin-bottom: 0;
+    z-index: 50;
 }
 
-.statement {
-    position: relative;
+.overlay::before {
+    content: '';
+    z-index: 10;
     width: 100%;
-    z-index: 100;
-}
-
-.statement h2 {
-    position: absolute;
-}
-
-.statement svg {
+    height: 100%;
+    bottom: 0;
     display: block;
     position: absolute;
-    z-index: -100;
-    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, rgba(0, 0, 0, .3) 75%);
+}
+
+#contact .card-action a {
+    color: #26a79a !important;
+}
+
+#contact>section {
+    margin-bottom: 0;
 }
 
 .custom-shape-divider-bottom-1752309162 {
@@ -74,144 +129,194 @@ a {
 }
 
 /** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .custom-shape-divider-bottom-1752309162 svg {
         width: calc(179% + 1.3px);
         height: 500px;
     }
 }
 
-@media (min-width: 768px) {
-    #mission {
+@media screen and (min-width: 768px) {
+    .flex {
         flex-direction: row;
     }
 
-    #opportunity {
-        flex-direction: row;
+    #header-img section {
+        position: relative;
+    }
+
+    #header-img h1 {
+        background-color: transparent;
+        color: black;
+        text-align: left;
+        margin-top: -2em;
+        margin-left: 1em;
+        font-size: 4rem;
+    }
+
+    #index-logo {
+        position: absolute;
+        top: 2.5em;
+        left: 1em;
+        width: 175%;
+    }
+
+    #statement+section {
+        top: 18rem;
+    }
+
+    #contact {
+        top: 24rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #header-img h1 {
+        margin-top: -1em;
+        margin-left: 1em;
+        font-size: 4rem;
+    }
+
+    #index-logo {
+        position: absolute;
+        top: 2em;
+        left: 1em;
+        width: 175%;
     }
 }
 
 /** For mobile devices **/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .custom-shape-divider-bottom-1752309162 svg {
         width: calc(190% + 1.3px);
         height: 500px;
     }
 }
+
 /* end of index css*/
 
 /* Modifying the CSS of about-org.html*/
 .about-quote {
-font-size: 2.5vw;
-border-color: #185D33;
-margin-top: 100px;
-}
-.brand-logo {
-width: 250px;
-height: 100px;
-vertical-align: middle;
-}
-.nav-logo {
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
-#dropdown1 {
-width: 300px !important;
-}
-.dropdown-content li > a {
-color: #185D33;
-}
-.navbar {
-background-color: #185D33;
-position: relative;
-}
-.navbar-fixed {
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 4;
-}
-.about-col {
-width: 45%;
-margin: auto;
-}
-.card {
-padding-top: 30px;
-margin: auto;
-width: 40%;
-margin-top: 5vh;
-margin-bottom: 10vh;
+    font-size: 2.5vw;
+    border-color: #185D33;
+    margin-top: 100px;
 }
 
-.card-image {
-margin: auto;
-max-width: 400px;
+.brand-logo {
+    width: 250px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.nav-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#dropdown1 {
+    width: 300px !important;
+}
+
+.dropdown-content li>a {
+    color: #185D33;
+}
+
+.navbar {
+    background-color: #185D33;
+    position: relative;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.about-col {
+    width: 45%;
+    margin: auto;
+}
+
+#about .card {
+    padding-top: 30px;
+    margin: auto;
+    width: 40%;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+#about .card-image {
+    margin: auto;
+    max-width: 400px;
 }
 
 @media screen and (max-width: 1200px) {
-.about-row {
-display: flex;
-padding: 8vw;
-}
-.about-col {
-width: 100%;
-}
+    .about-row {
+        display: flex;
+        padding: 8vw;
+    }
 
-.about-quote {
-font-size: min(24px);
-margin-top: 30px;
-}
+    .about-col {
+        width: 100%;
+    }
 
-.card {
-margin: auto;
-width: 50%;
-}
+    .about-quote {
+        font-size: min(24px);
+        margin-top: 30px;
+    }
+
+    .card {
+        margin: auto;
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 800px) {
-.about-image {
-margin-top: 56px;
-}
-.card {
-width: 100%;
-}
-.card-image {
-max-width: 400px;
-margin: auto;
-}
-.card-content {
-text-align: center;
-}
+    .about-image {
+        margin-top: 56px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-image {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .card-content {
+        text-align: center;
+    }
 }
 
 
 @media screen and (max-width: 600px) {
-.brand-logo {
-width: 26vw;
-height: 68px;
-vertical-align: middle;
-}
+    .brand-logo {
+        width: 26vw;
+        height: 68px;
+        vertical-align: middle;
+    }
 }
 
 /* End of CSS for about-org.html*/
 
 /* Program & Events Page, Kevin Nie's code below */
 
-.statement_header{
-    background-color:#36c46d31;
+.statement_header {
+    background-color: #36c46d31;
     color: #185D33;
     padding: 10px;
     text-align: center;
     border-radius: 50px;
 }
 
-
-
 #statement_section {
     display: flex;
     flex-wrap: wrap;
-   justify-content: center;
+    justify-content: center;
     margin-top: 10vh;
     font-size: 4vw;
     font-family: "Open Sans", sans-serif;
@@ -221,19 +326,17 @@ vertical-align: middle;
 
 .program_header {
     text-align: center;
-    font-size:calc(24px + 2vw);
+    font-size: calc(24px + 2vw);
     margin: 1px;
     padding: 15px;
 }
 
 .event_header {
     text-align: center;
-    font-size:calc(24px + 2vw);
+    font-size: calc(24px + 2vw);
     margin: 1px;
     padding: 15px;
 }
-
-
 
 .grid__pop-up_header {
     font-size: 2.5vh;
@@ -243,10 +346,10 @@ vertical-align: middle;
 }
 
 p {
- font-size: 2vh;
- margin: 20px;
- visibility: hidden;
- opacity: 1;
+    font-size: 2vh;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 1;
 
 }
 
@@ -321,8 +424,8 @@ img {
     color: white;
     text-decoration: none;
     border-radius: 50px;
-    font-size:calc(20px + 1.5vw);
-    
+    font-size: calc(20px + 1.5vw);
+
     padding: 5px 30px;
 }
 
@@ -371,9 +474,6 @@ footer {
 .social_icon {
     margin-left: 20px;
 }
-
-
-
 /* footer section above */
 
 
