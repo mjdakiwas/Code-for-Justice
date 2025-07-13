@@ -1,5 +1,6 @@
 /* start of index css */
 .center {
+    text-align: center;
     vertical-align: middle
 }
 
@@ -18,17 +19,10 @@
 .flex {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 3em 0;
 }
 
-#header-img section {
-    position: absolute;
-    text-align: center;
-    top: 3em;
-    line-height: 1.25em;
-    font-size: 3.75rem;
-    height: auto;
+#contact {
+    position: relative;
     z-index: 100;
 }
 
@@ -201,19 +195,9 @@
     border-color: #185D33;
     margin-top: 100px;
 }
-
-.brand-logo {
-    width: 250px;
-    height: 100px;
-    vertical-align: middle;
+.col {
+width: 50%;
 }
-
-.nav-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 #dropdown1 {
     width: 300px !important;
 }
@@ -223,44 +207,31 @@
 }
 
 .navbar {
-    background-color: #185D33;
-    position: relative;
+background-color: #185D33;
+position: fixed;
+top: 0;
 }
-
-.navbar-fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 4;
+.justin-row {
+width: 100%;
 }
-
-.about-col {
-    width: 45%;
-    margin: auto;
+.card {
+width: 50%;
+margin: auto;
 }
-
-#about .card {
-    padding-top: 30px;
-    margin: auto;
-    width: 40%;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-}
-
-#about .card-image {
-    margin: auto;
-    max-width: 400px;
+.card-image {
+max-width: 500px;
+padding-top: 20px;
+margin: auto;
 }
 
 @media screen and (max-width: 1200px) {
-    .about-row {
-        display: flex;
-        padding: 8vw;
-    }
-
-    .about-col {
-        width: 100%;
-    }
+.row {
+display: block;
+padding: 8vw;
+}
+.col{
+width: 100%;
+}
 
     .about-quote {
         font-size: min(24px);
@@ -274,31 +245,23 @@
 }
 
 @media screen and (max-width: 800px) {
-    .about-image {
-        margin-top: 56px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .card-image {
-        max-width: 400px;
-        margin: auto;
-    }
-
-    .card-content {
-        text-align: center;
-    }
+.about-image {
+margin-top: 56px;
+}
+.card {
+width: 100%;
+}
+.card-image {
+max-width: 400px;
+margin: auto;
+}
 }
 
 
-@media screen and (max-width: 600px) {
-    .brand-logo {
-        width: 26vw;
-        height: 68px;
-        vertical-align: middle;
-    }
+@media screen and (max-width: 430px) {
+.brand-logo {
+visibility: hidden;
+}
 }
 
 
@@ -339,23 +302,8 @@
     padding: 15px;
 }
 
-.grid__pop-up_header {
-    font-size: 2.5vh;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 25px;
-}
-
-p {
-    font-size: 2vh;
-    margin: 20px;
-    visibility: hidden;
-    opacity: 1;
-
-}
-
 img {
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
     border-width: 1em;
 }
