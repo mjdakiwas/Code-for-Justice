@@ -106,7 +106,16 @@ font-size: 2.5vw;
 border-color: #185D33;
 margin-top: 100px;
 }
-
+.brand-logo {
+width: 250px;
+height: 100px;
+vertical-align: middle;
+}
+.nav-logo {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
 #dropdown1 {
 width: 300px !important;
 }
@@ -115,14 +124,24 @@ color: #185D33;
 }
 .navbar {
 background-color: #185D33;
+position: relative;
+}
+.navbar-fixed {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 4;
 }
 .about-col {
 width: 45%;
 margin: auto;
 }
 .card {
+padding-top: 30px;
 margin: auto;
 width: 40%;
+margin-top: 5vh;
+margin-bottom: 10vh;
 }
 
 .card-image {
@@ -167,9 +186,11 @@ text-align: center;
 }
 
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 600px) {
 .brand-logo {
-visibility: hidden;
+width: 26vw;
+height: 68px;
+vertical-align: middle;
 }
 }
 
