@@ -12,7 +12,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
-<body id="contact">
+<body id="contact-pg">
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="DA-info.html">What is Digital Accessibility?</a></li>
         <li><a href="programs-events.html">Programs & Events</a></li>
@@ -22,8 +22,8 @@
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo left"><img class="nav-logo" alt="All Access logo" src="Logo.png"></a>
             <ul class="right">
-                <li class="active"><a href="about-org.html">About Us</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="about-org.html">About Us</a></li>
+                <li class="active"><a href="contact-us.html">Contact Us</a></li>
                 <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Explore</a></li>
             </ul>
         </div>
@@ -33,23 +33,23 @@
         <h1>Contact Us!</h1>
         <form id="contact-form">
             <div class="input-field col s12">
-                <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                <input type="text" id="fname" name="fname" placeholder="First Name" required class="validate">
                 <label for="fname">First Name</label>
             </div>
 
             <div class="input-field col s12">
-                <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required class="validate">
                 <label for="lname">Last Name</label>
             </div>
 
             <div class="input-field col s12">
                 <input type="text" id="email" name="email" placeholder="ex. johnjanedoe@example.com"
-                    autocomplete="email">
+                    autocomplete="email" class="validate">
                 <label for="email">Email Address</label>
             </div>
 
             <div class="input-field col s12">
-                <input type="tel" id="phone-num" name="phone-num" placeholder="ex. (000)-000-0000">
+                <input type="tel" id="phone-num" name="phone-num" placeholder="ex. (000)-000-0000" class="validate">
                 <label for="phone-num">Phone Number</label>
             </div>
 
@@ -209,11 +209,13 @@
             </div>
 
             <div class="input-field col s12">
-                <button type="submit" class="btn">Send
+                <button type="submit" class="btn" value="Submit">Send
                     <i class="material-icons right">send</i>
                 </button>
             </div>
         </form>
+
+        <section id="error-container"></section>
     </main>
 
     <footer>
@@ -241,11 +243,11 @@
                 <i class="fa-brands fa-x-twitter"></i>
             </a>
         </div>
-
     </footer>
 
     <script src="script.js"></script>
     <script src="materialize/js/materialize.min.js"></script>
+    <script src="https://kit.fontawesome.com/3cc749efd0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,3 +1,315 @@
+/* start of index css */
+.center {
+    vertical-align: middle
+}
+
+#index a {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: .5rem;
+    color: #fff;
+}
+
+.relative {
+    position: relative;
+    top: 16rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 3em 0;
+}
+
+#header-img section {
+    position: absolute;
+    text-align: center;
+    top: 3em;
+    line-height: 1.25em;
+    font-size: 3.75rem;
+    height: auto;
+    z-index: 100;
+}
+
+#header-img h1 {
+    margin-bottom: 0;
+    color: #fff;
+    background-color: #185D33;
+}
+
+#index-logo {
+    width: 100%;
+}
+
+.mask-index {
+    -webkit-mask-image: url('Vector.svg');
+    mask-image: url('Vector.svg');
+    mask-repeat: no-repeat;
+}
+
+#header-img {
+    margin: 0;
+    padding: 0;
+}
+
+#statement {
+    position: absolute;
+    top: 36rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: 80%;
+    background-color: #185D33;
+    color: #fff;
+    border-radius: 15px;
+    padding: 1.6em;
+}
+
+#statement p {
+    font-size: 2.5em;
+}
+
+#statement+section {
+    top: 34em;
+}
+
+#contact {
+    top: 40rem;
+}
+
+#contact h2 {
+    margin: 1em 0 .5em 0;
+}
+
+#contact .card-title {
+    margin-bottom: 0;
+    z-index: 50;
+}
+
+.overlay::before {
+    content: '';
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, rgba(0, 0, 0, .3) 75%);
+}
+
+#contact .card-action a {
+    color: #26a79a !important;
+}
+
+#contact>section {
+    margin-bottom: 0;
+}
+
+.custom-shape-divider-bottom-1752309162 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -100;
+}
+
+.custom-shape-divider-bottom-1752309162 svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 270px;
+}
+
+.custom-shape-divider-bottom-1752309162 .shape-fill {
+    fill: #185D33;
+}
+
+/** For tablet devices **/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1752309162 svg {
+        width: calc(179% + 1.3px);
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .flex {
+        flex-direction: row;
+    }
+
+    #header-img section {
+        position: relative;
+    }
+
+    #header-img h1 {
+        background-color: transparent;
+        color: black;
+        text-align: left;
+        margin-top: -2em;
+        margin-left: 1em;
+        font-size: 4rem;
+    }
+
+    #index-logo {
+        position: absolute;
+        top: 2.5em;
+        left: 1em;
+        width: 175%;
+    }
+
+    #statement+section {
+        top: 18rem;
+    }
+
+    #contact {
+        top: 24rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #header-img h1 {
+        margin-top: -1em;
+        margin-left: 1em;
+        font-size: 4rem;
+    }
+
+    #index-logo {
+        top: 1.75em;
+        left: 1em;
+        max-width: 175%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #index-logo {
+        top: 1em;
+    }
+}
+
+/** For mobile devices **/
+@media screen and (max-width: 767px) {
+    .custom-shape-divider-bottom-1752309162 svg {
+        width: calc(190% + 1.3px);
+        height: 500px;
+    }
+}
+/* end of index css*/
+
+/* Modifying the CSS of about-org.html*/
+.about-quote {
+    font-size: 2.5vw;
+    border-color: #185D33;
+    margin-top: 100px;
+}
+
+.brand-logo {
+    width: 250px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.nav-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#dropdown1 {
+    width: 300px !important;
+}
+
+.dropdown-content li>a {
+    color: #185D33 !important;
+}
+
+.navbar {
+    background-color: #185D33;
+    position: relative;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.about-col {
+    width: 45%;
+    margin: auto;
+}
+
+.card {
+    padding-top: 30px;
+    margin: auto;
+    width: 40%;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.card-image {
+    margin: auto;
+    max-width: 400px;
+}
+
+#index footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .about-row {
+        display: flex;
+        padding: 8vw;
+    }
+
+    .about-col {
+        width: 100%;
+    }
+
+    .about-quote {
+        font-size: min(24px);
+        margin-top: 30px;
+    }
+
+    .card {
+        margin: auto;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about-image {
+        margin-top: 56px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-image {
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .card-content {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .brand-logo {
+        width: 26vw;
+        height: 68px;
+        vertical-align: middle;
+    }
+}
+/* End of CSS for about-org.html*/
+
 /* Program & Events Page, Kevin Nie's code below */
 
 .statement_header {
@@ -143,13 +455,19 @@ img {
 /* Program & Events Page, Kevin Nie's code above */
 
 /* footer section below */
+body {
+    min-height: 100vh;
+}
+
 footer {
-    display: flex;
+    display: flex !important;
+    flex: 1 0 auto;
     flex-wrap: wrap;
     background-color: #185D33;
     padding: 20px;
     justify-content: center;
-
+    min-width: 100%;
+    margin-top: 1em;
 }
 
 .footer_link {
