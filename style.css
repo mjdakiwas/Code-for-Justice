@@ -76,7 +76,6 @@
 
 #contact {
     top: 40rem;
-    text-align: center;
 }
 
 #contact h2 {
@@ -178,10 +177,15 @@
     }
 
     #index-logo {
-        position: absolute;
-        top: 2em;
+        top: 1.75em;
         left: 1em;
-        width: 175%;
+        max-width: 175%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #index-logo {
+        top: 1em;
     }
 }
 
@@ -192,7 +196,6 @@
         height: 500px;
     }
 }
-
 /* end of index css*/
 
 /* Modifying the CSS of about-org.html*/
@@ -219,7 +222,7 @@
 }
 
 .dropdown-content li>a {
-    color: #185D33;
+    color: #185D33 !important;
 }
 
 .navbar {
@@ -239,7 +242,7 @@
     margin: auto;
 }
 
-#about .card {
+.card {
     padding-top: 30px;
     margin: auto;
     width: 40%;
@@ -247,9 +250,15 @@
     margin-bottom: 10vh;
 }
 
-#about .card-image {
+.card-image {
     margin: auto;
     max-width: 400px;
+}
+
+#index footer {
+    display: flex;
+    position: relative;
+    bottom: 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -445,12 +454,14 @@
 
 /* footer section below */
 footer {
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     background-color: #185D33;
     padding: 20px;
     justify-content: center;
-
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
 }
 
 .footer_link {
