@@ -144,28 +144,29 @@
     #header-img section {
         position: relative;
 
-    #header-img h1 {
-        background-color: transparent;
-        color: black;
-        text-align: left;
-        margin-top: -2em;
-        margin-left: 1em;
-        font-size: 4rem;
-    }
+        #header-img h1 {
+            background-color: transparent;
+            color: black;
+            text-align: left;
+            margin-top: -2em;
+            margin-left: 1em;
+            font-size: 4rem;
+        }
 
-    #index-logo {
-        position: absolute;
-        top: 2.5em;
-        left: 1em;
-        width: 175%;
-    }
+        #index-logo {
+            position: absolute;
+            top: 2.5em;
+            left: 1em;
+            width: 175%;
+        }
 
-    #statement+section {
-        top: 18rem;
-    }
+        #statement+section {
+            top: 18rem;
+        }
 
-    #contact {
-        top: 24rem;
+        #contact {
+            top: 24rem;
+        }
     }
 }
 
@@ -361,6 +362,7 @@ footer {
 .social_icon {
     margin-left: 20px;
 }
+
 /* footer section above */
 
 
@@ -399,6 +401,7 @@ footer {
 #or-divider {
     gap: 20px;
 }
+
 /* end of contact css */
 
 /*start of navbar CSS*/
@@ -441,6 +444,7 @@ footer {
         vertical-align: middle;
     }
 }
+
 /*end of navbar CSS*/
 
 /* Nia's CSS: What is Digital Accessibility?*/
