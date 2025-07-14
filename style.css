@@ -525,6 +525,127 @@ footer {
 
 /* end of contact css */
 
+/*CSS for Sponsors-Partners Jordan CSS*/
+
+body {
+    background-color: #CAEED8;
+}
+
+#pfp {
+    height: auto;
+    width: 15vw;
+    border-radius: 50%;
+    animation: fadeIn 2.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.type {
+    font-size: 24px;
+    animation: typing 3s steps(50, end) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+}
+
+@keyframes typing {
+    to {
+        width: 75%
+    }
+}
+
+.sponsor-right {
+    display: flex;
+    justify-content: end;
+    margin-right: 15%;
+}
+
+.sponsor-left {
+    display: flex;
+    justify-content: start;
+    margin-left: 15%;
+}
+
+#pfp {
+    height: auto;
+    width: 15vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8vw;
+}
+
+.companies {
+    height: auto;
+    width: 10vw;
+    border-radius: 50%;
+}
+
+
+
+/* Tablets */
+@media (max-width: 800px) {
+    .partners h2 {
+        font-size: 1.8rem;
+    }
+
+    .brands {
+    gap: 2vw;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
+/* Mobile Phone*/
+@media (max-width: 600px) {
+    .partners h2 {
+        font-size: 1.5rem;
+    }
+    
+    .brands {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brands img {
+        width: 12vw;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+/* End CSS for Sponsors-Partners*/
+=======
 /*start of navbar CSS*/
 .brand-logo {
     width: 250px;
@@ -567,5 +688,3 @@ footer {
 }
 
 /*end of navbar CSS*/
-
-/* Nia's CSS: What is Digital Accessibility?*/
