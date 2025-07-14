@@ -143,7 +143,6 @@
 
     #header-img section {
         position: relative;
-    }
 
     #header-img h1 {
         background-color: transparent;
@@ -267,7 +266,6 @@ img {
     }
 }
 
-
 .grid_three__rows {
     margin-top: 10vh;
 }
@@ -301,8 +299,6 @@ img {
     bottom: 100px;
     transition: 0.5s;
 }
-
-
 
 .button_align {
     display: flex;
@@ -343,7 +339,6 @@ img {
 /* Program & Events Page, Kevin Nie's code above */
 
 /* footer section below */
-
 footer {
     display: flex;
     flex-wrap: wrap;

@@ -1,0 +1,142 @@
+/* Nia Manning
+ 7-16-2025
+ Coding for Justice: Digital Accessibility */
+
+body{
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#text-animation{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#fly-in-text{
+    opacity: 0.5;
+    transform: translateY(100px);
+    animation: flyIn ease-out forwards;
+    animation-timeline: view(block);
+    animation-range: entry 30% cover 50%; 
+}
+
+h2{
+    color: #185D33;
+}
+
+.da-section{
+    margin: 40px 0;
+}
+
+.da-head-section{
+    margin-bottom: 10px;
+}
+
+.matters-head-section{
+    background-color: #caeed8;
+}
+
+.matters-section{
+    padding: 20px;
+    background-color: #caeed8;
+/* display: flex;
+ flex-wrap: wrap;
+ align-items: center;*/
+}
+
+.DA-img{
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+
+    /*flex: 1 1 300px;
+    max-width: 400px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;*/
+}
+
+/*.matters-section > p{
+    flex: 2 1 200px;
+}*/
+
+.list-section{
+    background-color: #caeed8;
+    padding: 20px;
+    margin: 40px 0;
+    border: 1px solid #ddd;
+}
+
+.list-section h2{
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.list-section ol{
+    padding-left: 20px;
+}
+
+.list-section li{
+    margin-bottom: 20px;
+}
+
+
+
+.commitment-section{
+    margin:  40px 0;
+}
+
+.commitment-head-section{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.involved-section{
+    margin:  40px 0;
+}
+
+.involved-head-section{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+@keyframes flyIn{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .matters-section{
+        flex-direction: column;
+    }
+    .DA-img{
+        max-width: 100%;
+    }
+    .list-section{
+        padding: 20px 15px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    body{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 10vw;
+    }
+}
