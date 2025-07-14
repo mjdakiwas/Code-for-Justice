@@ -453,15 +453,19 @@
 /* Program & Events Page, Kevin Nie's code above */
 
 /* footer section below */
+body {
+    min-height: 100vh;
+}
+
 footer {
     display: flex !important;
+    flex: 1 0 auto;
     flex-wrap: wrap;
     background-color: #185D33;
     padding: 20px;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
     min-width: 100%;
+    margin-top: 1em;
 }
 
 .footer_link {
