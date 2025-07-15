@@ -13,6 +13,16 @@ body {
     border-radius: 20%;
     padding-left: 3vw;
     padding-right: 3vw;
+    animation: slideInLeft  2s ease-in forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+@keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 img {
@@ -67,6 +77,8 @@ h1 {
 footer {
     margin-top: 4vh;
 }
+
+
 
 
 @media screen and (max-width: 1030px) {
