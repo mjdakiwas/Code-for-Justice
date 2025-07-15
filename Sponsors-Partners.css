@@ -31,6 +31,10 @@ img {
     border-radius: 50%;
 }
 
+.nav-logo {
+    border-radius: 0%;
+}
+
 h1 {
     display: flex;
     justify-content: center;
@@ -64,8 +68,8 @@ h1 {
 }
 
 .companies {
-    height: 15vh;
-    width: auto;
+    height: auto;
+    width: 8vw;
 }
 
 .brands {
@@ -76,48 +80,76 @@ h1 {
 
 footer {
     margin-top: 4vh;
+    position: absolute;
 }
 
 
 
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1050px) {
     .brands {
-        display: flex;
         width: 3vw;
-        flex-direction: column;
         height: auto;
+        justify-content: center;
     }
 
-    .pfp {
-        height: 3vh;
-        width: 3vw;
+    #pfp {
+        height: auto;
+        width: 15vw;
         border-radius: 50%;
     }
 
     .type {
         font-size: 20px;
     }
+
+    h1 {
+        margin-top: 7%;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
     .brands {
-        display: flex;
-        width: 2vw;
-        flex-direction: column;
+        justify-content: center;
+        width: 3vw;
         height: auto;
     }
 
-    .pfp {
-        height: 3vh;
-        width: 3vw;
-        border-radius: 30%;
+    #pfp {
+        height: auto;
+        width: 15vw;
+        border-radius: 50%;
     }
 
     .type {
         font-size: 16px;
     }
+
+    h1 {
+        margin-top: 10%;
+    }
 }
 
+@media screen and (max-width: 450px) {
+    .brands {
+        justify-content: center;
+        width: 3vw;
+        height: auto;
+    }
+
+    #pfp {
+        height: auto;
+        width: 15vw;
+        border-radius: 50%;
+    }
+
+    .type {
+        font-size: 16px;
+    }
+
+    h1 {
+        margin-top: 15%;
+    }
+}
 
 /* End CSS for Sponsors-Partners*/
