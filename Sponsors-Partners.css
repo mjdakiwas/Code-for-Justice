@@ -4,13 +4,38 @@ body {
     background-color: #CAEED8;
 }
 
+.type {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    border-right: 4px green solid;
+    border-left: 4px green solid;
+    border-radius: 20%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    animation: slideInLeft  2s ease-in forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+@keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 img {
     height: auto;
     width: 15vw;
     border-radius: 50%;
 }
 
-h1, h2 {
+.nav-logo {
+    border-radius: 0%;
+}
+
+h1 {
     display: flex;
     justify-content: center;
     margin-top: 5%;
@@ -32,19 +57,99 @@ h1, h2 {
 #pfp {
     height: auto;
     width: 15vw;
-    border-radius: 60%;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 .partners {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
 }
 
 .companies {
-    height: 15vh;
-    width: auto;
+    height: auto;
+    width: 8vw;
 }
 
+.brands {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+footer {
+    margin-top: 4vh;
+    position: absolute;
+}
+
+
+
+
+@media screen and (max-width: 1050px) {
+    .brands {
+        width: 3vw;
+        height: auto;
+        justify-content: center;
+    }
+
+    #pfp {
+        height: auto;
+        width: 15vw;
+        border-radius: 50%;
+    }
+
+    .type {
+        font-size: 20px;
+    }
+
+    h1 {
+        margin-top: 7%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .brands {
+        justify-content: center;
+        width: 3vw;
+        height: auto;
+    }
+
+    #pfp {
+        height: auto;
+        width: 15vw;
+        border-radius: 50%;
+    }
+
+    .type {
+        font-size: 16px;
+    }
+
+    h1 {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .brands {
+        justify-content: center;
+        width: 3vw;
+        height: auto;
+    }
+
+    #pfp {
+        height: auto;
+        width: 15vw;
+        border-radius: 50%;
+    }
+
+    .type {
+        font-size: 16px;
+    }
+
+    h1 {
+        margin-top: 15%;
+    }
+}
 
 /* End CSS for Sponsors-Partners*/
