@@ -10,51 +10,61 @@
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/jquery-validation@1.21.0/dist/jquery.validate.min.js
+"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 </head>
 
 <body id="contact-pg">
-    <ul id="dropdown1" class="dropdown-content">
-        <li><a href="DA-info.html">What is Digital Accessibility?</a></li>
-        <li><a href="programs-events.html">Programs & Events</a></li>
-        <li><a href="sponsors-partners.html">Sponsors & Partners</a></li>
-    </ul>
-    <nav class="nav navbar navbar-fixed">
-        <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo left"><img class="nav-logo" alt="All Access logo" src="Logo.png"></a>
-            <ul class="right">
-                <li><a href="about-org.html">About Us</a></li>
-                <li class="active"><a href="contact-us.html">Contact Us</a></li>
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Explore</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="DA-info.html">What is Digital Accessibility?</a></li>
+            <li><a href="programs-events.html">Programs & Events</a></li>
+            <li><a href="sponsors-partners.html">Sponsors & Partners</a></li>
+        </ul>
+        <nav class="nav navbar navbar-fixed">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo left"><img class="nav-logo" alt="All Access logo"
+                        src="Logo.png"></a>
+                <ul class="right">
+                    <li><a href="about-org.html">About Us</a></li>
+                    <li class="active"><a href="contact-us.html">Contact Us</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Explore</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <main class="container">
         <h1>Contact Us!</h1>
         <form id="contact-form">
             <div class="input-field col s12">
-                <input type="text" id="fname" name="fname" placeholder="First Name" required class="validate">
+                <input type="text" id="fname" name="fname" placeholder="First Name">
                 <label for="fname">First Name</label>
             </div>
 
             <div class="input-field col s12">
-                <input type="text" id="lname" name="lname" placeholder="Last Name" required class="validate">
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
                 <label for="lname">Last Name</label>
             </div>
 
             <div class="input-field col s12">
-                <input type="text" id="email" name="email" placeholder="ex. johnjanedoe@example.com"
-                    autocomplete="email" class="validate">
+                <input type="email" id="email" name="email" placeholder="ex. johnjanedoe@example.com"
+                    class="contact-info">
                 <label for="email">Email Address</label>
             </div>
 
             <div class="input-field col s12">
-                <input type="tel" id="phone-num" name="phone-num" placeholder="ex. (000)-000-0000" class="validate">
+                <input type="tel" id="phone-num" name="phone-num" placeholder="ex. (000)000-0000" class="contact-info">
                 <label for="phone-num">Phone Number</label>
             </div>
 
             <div class="input-field col s12">
-                <select id="contact-select" name="contact-select" required>
+                <select id="contact-select" name="contact-select" required class="validate">
                     <option value="" disabled selected>Reason for contact</option>
                     <option value="donate">Donate</option>
                     <option value="volunteer">Volunteer</option>
@@ -69,13 +79,14 @@
                     <div class="input-field">
                         <p class="caption">Choose a Donation Amount</p>
                         <section id="amount" class="section">
-                            <button id="5" class="btn-large">$5</button>
-                            <button id="10" class="btn-large">$10</button>
-                            <button id="25" class="btn-large">$25</button>
-                            <button id="50" class="btn-large">$50</button>
-                            <button id="100" class="btn-large">$100</button>
-                            <button id="250" class="btn-large">$250</button>
+                            <button type="button" value="5" class="btn-large amt-option">$5</button>
+                            <button type="button" value="10" class="btn-large amt-option">$10</button>
+                            <button type="button" value="25" class="btn-large amt-option">$25</button>
+                            <button type="button" value="50" class="btn-large amt-option">$50</button>
+                            <button type="button" value="100" class="btn-large amt-option">$100</button>
+                            <button type="button" value="250" class="btn-large amt-option">$250</button>
                         </section>
+                        <input type="hidden" name="amount-selected" id="amount-selected" class="validate amount-required">
                     </div>
 
                     <div id="or-divider" class="valign-wrapper">
@@ -86,7 +97,7 @@
 
                     <div class="input-field col s12">
                         <i class="material-icons prefix">attach_money</i>
-                        <input type="number" id="custom-amount" name="custom-amount" placeholder="Enter custom amount">
+                        <input type="number" id="custom-amount" class="amount-required" name="custom-amount" placeholder="Enter custom amount">
                         <label for="custom-amount">Custom Amount</label>
                     </div>
 
@@ -113,22 +124,22 @@
                         <div class="divider"></div>
                         <h3>Donate by Credit Card</h3>
                         <div class="input-field col s12">
-                            <input type="text" id="card-name" name="card-name" required>
+                            <input type="text" id="card-name" name="card-name">
                             <label for="card-name">Card Holder's Name</label>
                         </div>
 
                         <div class="input-field col s12">
-                            <input type="number" id="card-num" name="card-num" required>
+                            <input type="number" id="card-num" name="card-num">
                             <label for="card-num">Card Number</label>
                         </div>
 
-                        <div class="input-field col s6">
-                            <input type="text" id="exp-date" name="exp-date" class="datepicker" required>
+                        <div class="input-field col s12 m6">
+                            <input type="month" id="exp-date" name="exp-date">
                             <label for="exp-date">Expiration</label>
                         </div>
 
-                        <div class="input-field col s6 ">
-                            <input type="number" id="cvc" name="cvc" required>
+                        <div class="input-field col s12 m6">
+                            <input type="number" id="cvc" name="cvc">
                             <label for="cvc">Security Number</label>
                         </div>
                     </section>
@@ -152,7 +163,7 @@
 
             <section id="volunteer" class="section col s12">
                 <div class="input-field">
-                    <select id="volunteer-type">
+                    <select id="volunteer-type" name="volunteer-type">
                         <option value="" disabled selected>Choose a volunteering opportunity</option>
                         <option value="program">Program Volunteer</option>
                         <option value="event">Event Volunteer</option>
@@ -168,7 +179,7 @@
 
             <section id="request" class="section col s12">
                 <div class="input-field">
-                    <select id="website-type">
+                    <select id="website-type" name="website-type">
                         <option value="" disabled selected>Choose website purpose</option>
                         <option value="personal">Personal Project</option>
                         <option value="business">Small Business</option>
@@ -177,7 +188,7 @@
                 </div>
 
                 <div id="business" class="input-field">
-                    <input type="text" id="org-name" name="org-name" required>
+                    <input type="text" id="org-name" name="org-name">
                     <label for="org-name">Organization Name</label>
                 </div>
 
@@ -187,19 +198,19 @@
                 </div>
 
                 <div class="input-field">
-                    <input type="url" id="url" name="url" required>
+                    <input type="url" id="url" name="url">
                     <label for="url">Website URL</label>
                 </div>
 
                 <div class="input-field">
-                    <select id="redesign-deadline">
+                    <select id="deadline" name="deadline">
                         <option value="" disabled selected>Select redesign deadline</option>
                         <option value="asap">As soon as possible!</option>
                         <option value="1-2">1-2 Months</option>
                         <option value="3-4">3-4 Months</option>
                         <option value="5+">5+ Months</option>
                     </select>
-                    <label for="redesign-deadline">How soon do you need to redesign your website?</label>
+                    <label for="deadline">How soon do you need to redesign your website?</label>
                 </div>
             </section>
 
@@ -209,7 +220,7 @@
             </div>
 
             <div class="input-field col s12">
-                <button type="submit" class="btn" value="Submit">Send
+                <button type="submit" class="btn-large" value="Submit" id="submit" name="submit">Send
                     <i class="material-icons right">send</i>
                 </button>
             </div>

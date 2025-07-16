@@ -1,3 +1,8 @@
+html,
+body {
+    min-height: 100vh;
+}
+
 /* start of index css */
 .center {
     vertical-align: middle
@@ -8,11 +13,6 @@
     flex-wrap: nowrap;
     gap: .5rem;
     color: #fff;
-}
-
-.relative {
-    position: relative;
-    top: 16rem;
 }
 
 .flex {
@@ -53,12 +53,16 @@
     padding: 0;
 }
 
+#index main {
+    position: relative;
+}
+
 #statement {
-    position: absolute;
-    top: 36rem;
+    /*position: absolute;
+    top: 34rem;
     left: 0;
-    right: 0;
-    margin-inline: auto;
+    right: 0;*/
+    margin-top: 1em;
     width: 80%;
     background-color: #185D33;
     color: #fff;
@@ -70,9 +74,9 @@
     font-size: 2.5em;
 }
 
-#statement+section {
-    top: 34em;
-}
+/*#statement + section {
+    position: relative;
+}*/
 
 #contact {
     top: 40rem;
@@ -82,9 +86,10 @@
     margin: 1em 0 .5em 0;
 }
 
-#contact .card-title {
+#contact-cards .card-title {
     margin-bottom: 0;
     z-index: 50;
+    font-weight: 600;
 }
 
 .overlay::before {
@@ -102,8 +107,8 @@
     color: #26a79a !important;
 }
 
-#contact>section {
-    margin-bottom: 0;
+#contact button {
+    margin-bottom: 8em;
 }
 
 .custom-shape-divider-bottom-1752309162 {
@@ -120,7 +125,7 @@
     position: relative;
     display: block;
     width: calc(155% + 1.3px);
-    height: 270px;
+    height: 350px;
 }
 
 .custom-shape-divider-bottom-1752309162 .shape-fill {
@@ -196,6 +201,7 @@
         height: 500px;
     }
 }
+
 /* end of index css*/
 
 /* footer section below */
@@ -226,6 +232,20 @@ footer {
 
 
 /* start of contact css */
+#contact-pg {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#contact-pg main {
+    flex: 1 0 auto;
+}
+
+#contact-form {
+    margin-bottom: 15em;
+}
+
 #donate {
     display: none;
 }
@@ -259,6 +279,51 @@ footer {
 
 #or-divider {
     gap: 20px;
+}
+
+#contact-pg footer {
+    bottom: 0;
+}
+
+#contact-pg .input-field {
+    margin: 3em 0 !important;
+}
+
+input[type="month"] {
+    width: 100%;
+    height: 3rem;
+    border-bottom: 1px solid #9e9e9e;
+    box-shadow: none;
+    font-size: 16px;
+    padding: 20px 22px;
+    font-weight: 500;
+    margin-top: .75em;
+}
+
+input[type="month"]:focus {
+    border-bottom: 1px solid #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a;
+}
+
+input[type="month"] ~ label {
+    color: #9e9e9e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    cursor: text;
+    -webkit-transform: translateY(-14px) scale(0.8);
+    transform: translateY(-14px) scale(0.8);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    left: .75rem;
+}
+
+/* validation css */
+.invalid {
+    font-size: .8em;
+    bottom: 0;
+    color: #f44436;
 }
 
 /* end of contact css */
