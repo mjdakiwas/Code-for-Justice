@@ -16,3 +16,5 @@ and recent Computer science or Software Engineering graduates to get <br>
 involved through our Programs and Events
 
 ## Usage Guide
+Go to the link: https://mjdakiwas.github.io/Code-for-Justice/index.html
+To run these files.
